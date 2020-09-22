@@ -2,24 +2,26 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Café Progate</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <div class = "menu-wrapper container">
-        <h1 class = "logo">　46's Café　</h1>
-        <div class = "menu-items">
-            <?php foreach($menus as $menu): ?>
-                <div class = "menu-item">
-                    <img src = "<?php echo $menu -> image ?>">
-                    <h3 class = "menu-item-name"><?php echo $menu -> name ?></h3>
-                    <p class = "price">¥<?php echo $menu -> price ?></p>
-                </div>
-            <?php endforeach ?>
-        </div>
-    </div>
-</body>
-</html>
+　 <head>
+　 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+　 <meta http-equiv="Content-Style-Type" content="text/css">
+　 <title>php sample program</title>
+　 </head>
+　 <body>
+　 <div style="margin:150px 0 0 300px;width:500px;height:90px;border:1px solid #555555;text-align:center;background-color:#fefe9e;font-weight:bold">
+
+　　 <?php
+　　　　 print "<br>";
+　　　　 print "<br>";
+　　　　if( ! ini_get('date.timezone') )
+　　　　　{
+　　　　　　date_default_timezone_set('GMT');
+　　　　　}
+
+　　　　 print "現在の日時は　". date("Y年m月d日　H時i分") . "　です。";
+　　　　 print "<br>";
+　　　?>
+
+　　 </div>
+　 </body>
+　 </hrml>
